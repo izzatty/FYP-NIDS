@@ -39,10 +39,23 @@ This project focuses on developing a Machine Learning-based **Intrusion Detectio
 ```bash
 FYP-NIDS/
 │
-├── data/                   # CICIDS2018 or processed datasets
-├── cgan/                   # Code for training cGAN
-├── dnn_model/              # DNN training and evaluation scripts
-├── shap_analysis/          # SHAP interpretability visualizations
-├── results/                # Model metrics and graphs
-├── requirements.txt        # Python dependencies
-├── README.md               # Project overview
+├── notebooks/
+│   ├── 1_preprocessing.ipynb            ← Data cleaning, transformation
+│   └── 2_dnn_cgan_shap.ipynb            ← Model training, augmentation, SHAP
+│
+├── data/
+│   ├── CICIDS2018/                      ← Folder for raw data splits
+│   ├── merged.csv                       ← Combined full dataset
+│   └── preprocessed.csv                 ← Cleaned/encoded/scaled version
+│
+├── images/                              ← Plots, SHAP, confusion matrix
+│   ├── shap_summary.png
+│   └── confusion_matrix.png
+│
+├── models/                              ← Saved model files (if any)
+│   └── dnn_model.h5
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
