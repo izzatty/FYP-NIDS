@@ -59,3 +59,26 @@ FYP-NIDS/
 ├── README.md
 └── .gitignore
 
+---
+
+## 🧾 Dataset: CICIDS2018
+
+The project uses the [CICIDS2018 dataset](https://www.unb.ca/cic/datasets/ids-2018.html) by the Canadian Institute for Cybersecurity.
+
+This dataset contains realistic network traffic data including both benign and malicious activity, such as:
+
+- DDoS
+- Brute Force (SSH/FTP)
+- SQL Injection
+- Botnet, PortScan, and more
+
+**Preprocessing includes**:
+- Merging all day-wise CSV files into a single dataset
+- Dropping null and duplicate rows
+- Encoding categorical values
+- Feature scaling
+- Splitting for training and testing
+
+A final preprocessed dataset is saved as:  
+`data/preprocessed.csv`
+
