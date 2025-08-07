@@ -52,7 +52,7 @@ FYP-NIDS/
 │   ├── shap_summary.png
 │   └── confusion_matrix.png
 │
-├── models/                              ← Saved model files (if any)
+├── models/                              ← Saved model files
 │   └── dnn_model.h5
 │
 ├── requirements.txt
